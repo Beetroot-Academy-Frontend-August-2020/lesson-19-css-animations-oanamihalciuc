@@ -1,0 +1,39 @@
+html {
+    background-color: black;;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p {
+    width: 10em;
+    height: 15em;
+    background: url(https://i.imgur.com/y0hvD2p.png);
+    background-size: cover;
+    border: 1px solid black;
+    transition: background-color 4s;
+    margin: 1em;
+}
+
+p:hover {
+    animation: flip-card 1.5s;
+}
+
+@keyframes flip-card {
+    0%  { transform: rotateY(180deg) }
+    90% { background: url(https://i.imgur.com/cXStDmU.png) }
+    }
+
+
